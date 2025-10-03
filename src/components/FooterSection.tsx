@@ -1,5 +1,8 @@
                                                                                                                         "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+
+// Colors used for bubbles (module scope to avoid effect dependency warnings)
+const BUBBLE_COLORS = ['#0d1b2a', '#1b263b', '#415a77', '#778da9', '#e0e1dd'];
 
 interface Bubble {
   id: number;
@@ -17,8 +20,6 @@ export default function FooterSection() {
   const bubblesRef = useRef<Bubble[]>([]);
   const mousePos = useRef({ x: 0, y: 0 });
 
-  const colors = ['#0d1b2a', '#1b263b', '#415a77', '#778da9', '#e0e1dd'];
-
   useEffect(() => {
     // Initialize bubbles
     const initialBubbles: Bubble[] = [];
@@ -28,7 +29,7 @@ export default function FooterSection() {
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
         size: Math.random() * 100 + 50,
-        color: colors[Math.floor(Math.random() * colors.length)],
+        color: BUBBLE_COLORS[Math.floor(Math.random() * BUBBLE_COLORS.length)],
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,
         opacity: Math.random() * 0.4 + 0.1,
@@ -148,7 +149,7 @@ export default function FooterSection() {
         x: e.clientX - rect.left,
         y: e.clientY - rect.top,
         size: Math.random() * 80 + 40,
-        color: colors[Math.floor(Math.random() * colors.length)],
+        color: BUBBLE_COLORS[Math.floor(Math.random() * BUBBLE_COLORS.length)],
         vx: (Math.random() - 0.5) * 2,
         vy: (Math.random() - 0.5) * 2,
         opacity: Math.random() * 0.5 + 0.2,
@@ -178,10 +179,10 @@ export default function FooterSection() {
       <div className="relative z-10 flex items-center justify-center min-h-screen px-8">
         <div className="text-center max-w-4xl">
           <h2 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: '#f1f1f1' }}>
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </h2>
           <p className="text-lg md:text-xl mb-8 opacity-90" style={{ color: '#f1f1f1' }}>
-            Ready to take your digital presence to the next level? Get in touch and let's create something extraordinary together.
+            Ready to take your digital presence to the next level? Get in touch and let&apos;s create something extraordinary together.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a

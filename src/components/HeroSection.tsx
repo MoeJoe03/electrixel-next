@@ -26,7 +26,8 @@ export default function HeroSection() {
 
   useEffect(() => {
     return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      const id = rafRef.current; // copy ref value to local to satisfy linter warning
+      if (id) cancelAnimationFrame(id);
     };
   }, []);
 

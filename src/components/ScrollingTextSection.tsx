@@ -179,7 +179,7 @@ export default function ScrollingTextSection() {
 
               <div className="relative" style={{ width: '480px' }}>
                 <h3 className="font-extrabold mb-6 text-left" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif', color: '#fff', fontSize: '30px', lineHeight: '36px' }}>
-                  Don't worry,<br />we've got this
+                  Don&apos;t worry,<br />we&apos;ve got this
                 </h3>
                 <div className="leading-relaxed text-left" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif', fontSize: '20px', color: '#ffffff', fontWeight: 400 }}>
                   We take full ownership of your projects, so you<br />
@@ -191,12 +191,12 @@ export default function ScrollingTextSection() {
 
               <div style={{ width: '480px' }}>
                 <h3 className="font-extrabold mb-6 text-left" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif', color: '#fff', fontSize: '30px', lineHeight: '36px' }}>
-                  Stay ahead,<br />don't follow
+                  Stay ahead,<br />don&apos;t follow
                 </h3>
                 <div className="leading-relaxed text-left" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif', fontSize: '20px', color: '#ffffff', fontWeight: 400 }}>
-                  Forget chasing competitors, you'll be too busy<br />
+                  Forget chasing competitors, you&apos;ll be too busy<br />
                   outpacing them. True market leaders thrive by<br />
-                  embracing change, and we'll position you at the<br />
+                  embracing change, and we&apos;ll position you at the<br />
                   forefront with smart strategies that never<br />
                   compromise on quality.
                 </div>
